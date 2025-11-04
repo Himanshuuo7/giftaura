@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   background: url('/assets/images/banner.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
@@ -6,22 +7,37 @@
   justify-content: center;
   text-align: center;
   color: white;
-  background-blend-mode: darken;
-  background-color: rgba(0,0,0,0.4);
   padding: 0 5%;
+  overflow: hidden;
 }
+
+/* Darker overlay for better text focus */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75); /* increased dullness */
+  z-index: 0;
+}
+
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 600px;
+  opacity: 0; /* for animation */
 }
+
 .hero h1 {
-  color: #e63946;
-  font-size: 2.8rem;
+  color: #ff6f91;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
-.hero h1 span { color: #ff6f91; }
+
 .hero p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+  color: #fff0f3;
 }
 
 /* Categories */

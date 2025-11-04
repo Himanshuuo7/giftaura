@@ -93,3 +93,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCart();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const proceedBtn = document.querySelector(".btn-primary");
+    const subtotalElement = document.getElementById("subtotal");
+
+    // Toast function
+    function showToast(message) {
+      let toast = document.createElement("div");
+      toast.className = "toast";
+      toast.textContent = message;
+      document.body.appendChild(toast);
+
+      // Show animation
+      setTimeout(() => toast.classList.add("show"), 100);
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => toast.remove(), 400);
+      }, 3000);
+    }
+
+    proceedBtn.addEventListener("click", (event) => {
+      const subtotal = parseFloat(subtotalElement.textContent.replace("₹", "")) || 0;
+
+      if (subtotal <= 0) {
+        event.preventDefault();
+        showToast("🛒 Your cart is empty! Add some products first 💝");
+      }
+    });
+  });

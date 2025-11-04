@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3%;
+  padding: 0.6rem 3%;
   background-color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   position: sticky;
@@ -79,11 +79,32 @@ h1, h2, h3, h4 {
 .nav-links a.active {
   color: #ff6f91;
 }
+.vertical-brand {
+  display: none;
+  position: absolute;
+  top: 46%;
+  left: 2rem;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  color: #ff6f91;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
 
 /* 🌸 Icons */
 .nav-icons {
   display: flex;
   align-items: center;
+}
+
+.nav-icons img{
+  height: 3.5rem;
+  color: #ff6f91;
 }
 .nav-icons a {
   margin-left: 1rem;
@@ -214,6 +235,10 @@ h1, h2, h3, h4 {
     box-shadow: -4px 0 15px rgba(0,0,0,0.1);
     transition: right 0.5s ease;
   }
+  .nav-links.active .vertical-brand {
+    display: block;
+    animation: fadeInLeft 0.8s ease forwards;
+  }
 
   .nav-links.active {
     right: 0;
@@ -233,8 +258,6 @@ h1, h2, h3, h4 {
   /* 🌸 Add icons inside menu */
   .nav-links .nav-icons {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
   }
 
   .nav-links .nav-icons a {
@@ -262,5 +285,15 @@ h1, h2, h3, h4 {
   }
   .hero h1 {
     font-size: 1.8rem;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) rotate(-90deg) translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) rotate(-90deg) translateX(0);
   }
 }

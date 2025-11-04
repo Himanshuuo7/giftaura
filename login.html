@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | GiftAura</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | GiftAura</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/login.css">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">🎁 GiftAura</div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="nav-icons">
-      <a href="cart.html" class="icon">🛒</a>
-      <a href="login.html" class="icon">👤</a>
-    </div>
-    <button class="menu-toggle">☰</button>
-  </header>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">🎁 GiftAura</div>
+      <nav class="nav-links">
+        <div class="vertical-brand">G I F T A U R A</div>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="cart.html" class="icon"
+          ><img src="assets/icons/cart.png" alt=""
+        /></a>
+        <a href="login.html" class="icon"
+          ><img src="assets/icons/user.png" alt=""
+        /></a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </header>
 
-  <!-- 💗 Auth Section -->
-  <section class="auth-container fade-up">
-    <div class="auth-box">
-      <div class="tabs">
-        <button class="tab-btn active" id="loginTab">Login</button>
-        <button class="tab-btn" id="signupTab">Signup</button>
+    <!-- 💗 Auth Section -->
+    <section class="auth-container fade-up">
+      <div class="auth-box">
+        <div class="tabs">
+          <button class="tab-btn active" id="loginTab">Login</button>
+          <button class="tab-btn" id="signupTab">Signup</button>
+        </div>
+
+        <!-- 🔐 Login Form -->
+        <form id="loginForm" class="form active">
+          <h2>Welcome Back 🎉</h2>
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="btn-primary">Login</button>
+          <p id="loginMsg" class="form-msg"></p>
+        </form>
+
+        <!-- 🪩 Signup Form -->
+        <form id="signupForm" class="form">
+          <h2>Create Account 💌</h2>
+          <input type="text" id="signupName" placeholder="Full Name" required />
+          <input type="email" id="signupEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="btn-primary">Signup</button>
+          <p id="signupMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 🌸 Elegant Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>🎁 GiftAura</h3>
+          <p>
+            Spreading happiness with thoughtfully curated gifts that make every
+            moment special.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-circle-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-support">
+          <h4>Customer Support</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Get the latest gift trends & offers straight to your inbox.</p>
+        </div>
       </div>
 
-      <!-- 🔐 Login Form -->
-      <form id="loginForm" class="form active">
-        <h2>Welcome Back 🎉</h2>
-        <input type="email" id="loginEmail" placeholder="Email" required />
-        <input type="password" id="loginPassword" placeholder="Password" required />
-        <button type="submit" class="btn-primary">Login</button>
-        <p id="loginMsg" class="form-msg"></p>
-      </form>
-
-      <!-- 🪩 Signup Form -->
-      <form id="signupForm" class="form">
-        <h2>Create Account 💌</h2>
-        <input type="text" id="signupName" placeholder="Full Name" required />
-        <input type="email" id="signupEmail" placeholder="Email" required />
-        <input type="password" id="signupPassword" placeholder="Password" required />
-        <button type="submit" class="btn-primary">Signup</button>
-        <p id="signupMsg" class="form-msg"></p>
-      </form>
-    </div>
-  </section>
-
-      <!-- 🌸 Elegant Footer -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <h3>🎁 GiftAura</h3>
-      <p>
-        Spreading happiness with thoughtfully curated gifts that make every moment special.
-      </p>
-      <div class="social-links">
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-facebook-circle-line"></i></a>
-        <a href="#"><i class="ri-twitter-line"></i></a>
+      <div class="footer-bottom">
+        <p>© 2025 GiftAura. Crafted with 💖 for moments that matter.</p>
       </div>
-    </div>
-
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-support">
-      <h4>Customer Support</h4>
-      <ul>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Shipping & Returns</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-newsletter">
-      <h4>Stay Updated</h4>
-      <p>Get the latest gift trends & offers straight to your inbox.</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 GiftAura. Crafted with 💖 for moments that matter.</p>
-  </div>
-</footer>
-  <!-- JS -->
-  <script src="js/login.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    </footer>
+    <!-- JS -->
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

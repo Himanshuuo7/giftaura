@@ -117,9 +117,64 @@ body {
 .btn-primary {
   margin-top: 15px;
 }
+/* 🌸 Elegant Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #ff4fa3, #ff94c2);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 20px rgba(255, 119, 181, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 @media (max-width: 900px) {
   .cart-container {
     grid-template-columns: 1fr;
   }
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .item-details {
+    width: 100%;
+  }
+
+  .quantity {
+    margin-top: 8px;
+  }
+
+  .remove-btn {
+    align-self: flex-end;
+    margin-right: 5.7rem;
+    margin-top: 10px;
+  }
+
+  .cart-summary {
+    margin-top: 30px;
+  }
 }
+

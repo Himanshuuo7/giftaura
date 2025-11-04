@@ -1,11 +1,9 @@
 // js/filters.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const productGrid = document.getElementById("productGrid");
   const checkboxes = document.querySelectorAll(".filters input[type='checkbox']");
   const priceRange = document.getElementById("priceRange");
   const priceValue = document.getElementById("priceValue");
-  const searchBox = document.getElementById("searchBox");
   const sortSelect = document.getElementById("sort");
   const applyBtn = document.getElementById("applyFilters");
 
@@ -24,20 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(cb => cb.value);
 
     const maxPrice = parseInt(priceRange.value);
-    const searchTerm = searchBox.value.toLowerCase();
     const sortValue = sortSelect.value;
 
     let filtered = allProducts.filter(card => {
       const price = parseInt(card.dataset.price);
       const category = card.dataset.category;
-      const title = card.querySelector("h3").textContent.toLowerCase();
 
       const categoryMatch =
         selectedCategories.length === 0 || selectedCategories.includes(category);
       const priceMatch = price <= maxPrice;
-      const searchMatch = title.includes(searchTerm);
 
-      return categoryMatch && priceMatch && searchMatch;
+      return categoryMatch && priceMatch;
     });
 
     // 📊 Sorting
@@ -62,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 🔄 Sort change triggers instantly
   sortSelect.addEventListener("change", applyFilters);
 });
+
 // ✅ Save clicked product details to localStorage
 document.querySelectorAll(".view-product").forEach(btn => {
   btn.addEventListener("click", (e) => {

@@ -30,14 +30,15 @@
     <header class="navbar">
       <div class="logo">🎁 GiftAura</div>
       <nav class="nav-links">
+        <div class="vertical-brand">G I F T A U R A</div>
         <a href="index.html">Home</a>
         <a href="shop.html" class="active">Shop</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="nav-icons">
-        <a href="cart.html" class="icon">🛒</a>
-        <a href="login.html" class="icon">👤</a>
+        <a href="cart.html" class="icon"><img src="assets/icons/cart.png" alt=""></a>
+        <a href="login.html" class="icon"><img src="assets/icons/user.png" alt=""></a>
       </div>
       <button class="menu-toggle">☰</button>
     </header>
@@ -72,12 +73,6 @@
           <input type="range" id="priceRange" min="0" max="2000" value="2000" />
           <p>Under ₹<span id="priceValue">2000</span></p>
         </div>
-
-        <div class="filter-group">
-          <h4>Search</h4>
-          <input type="text" id="searchBox" placeholder="Search gifts..." />
-        </div>
-
         <button class="btn-primary" id="applyFilters">Apply Filters</button>
       </aside>
 

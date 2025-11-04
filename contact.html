@@ -1,114 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | GiftAura</title>
-      <!-- Fonts -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | GiftAura</title>
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-</head>
-<body>
-  <!-- 🌸 Navbar -->
-  <header class="navbar">
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- 🌸 Navbar -->
+    <header class="navbar">
       <div class="logo">🎁 GiftAura</div>
       <nav class="nav-links">
+        <div class="vertical-brand">G I F T A U R A</div>
         <a href="index.html">Home</a>
-        <a href="shop.html" >Shop</a>
+        <a href="shop.html">Shop</a>
         <a href="about.html">About</a>
-        <a href="contact.html"class="active">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
       <div class="nav-icons">
-        <a href="cart.html" class="icon">🛒</a>
-        <a href="login.html" class="icon">👤</a>
+        <a href="cart.html" class="icon"
+          ><img src="assets/icons/cart.png" alt=""
+        /></a>
+        <a href="login.html" class="icon"
+          ><img src="assets/icons/user.png" alt=""
+        /></a>
       </div>
       <button class="menu-toggle">☰</button>
     </header>
 
-  <!-- 💖 Hero Section -->
-  <section class="contact-hero fade-up">
-    <h1>Get In <span>Touch</span></h1>
-    <p>We’d love to hear from you! Whether it’s feedback, queries, or collaborations — reach out anytime.</p>
-  </section>
-
-  <!-- 💌 Contact Form -->
-  <section class="contact-container">
-    <div class="contact-form fade-left">
-      <h2>Send a Message</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message..." rows="5" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-        <p id="formMsg" class="form-msg"></p>
-      </form>
-    </div>
-
-    <!-- 📍 Map Section -->
-    <div class="contact-map fade-right">
-      <h2>Find Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609656335!2d72.7410996!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63fbdb1eafd%3A0x3cb7b45e998c263!2sMumbai!5e0!3m2!1sen!2sin!4v1696249970999!5m2!1sen!2sin"
-        width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-  </section>
-  <!-- 🌸 Elegant Footer -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <h3>🎁 GiftAura</h3>
+    <!-- 💖 Hero Section -->
+    <section class="contact-hero fade-up">
+      <h1>Get In <span>Touch</span></h1>
       <p>
-        Spreading happiness with thoughtfully curated gifts that make every moment special.
+        We’d love to hear from you! Whether it’s feedback, queries, or
+        collaborations — reach out anytime.
       </p>
-      <div class="social-links">
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-facebook-circle-line"></i></a>
-        <a href="#"><i class="ri-twitter-line"></i></a>
+    </section>
+
+    <!-- 💌 Contact Form -->
+    <section class="contact-container">
+      <div class="contact-form fade-left">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            id="message"
+            placeholder="Your Message..."
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
       </div>
-    </div>
 
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+      <!-- 📍 Map Section -->
+      <div class="contact-map fade-right">
+        <h2>Find Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609656335!2d72.7410996!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63fbdb1eafd%3A0x3cb7b45e998c263!2sMumbai!5e0!3m2!1sen!2sin!4v1696249970999!5m2!1sen!2sin"
+          width="100%"
+          height="300"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!-- 🌸 Elegant Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>🎁 GiftAura</h3>
+          <p>
+            Spreading happiness with thoughtfully curated gifts that make every
+            moment special.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-circle-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+          </div>
+        </div>
 
-    <div class="footer-support">
-      <h4>Customer Support</h4>
-      <ul>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Shipping & Returns</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
-    <div class="footer-newsletter">
-      <h4>Stay Updated</h4>
-      <p>Get the latest gift trends & offers straight to your inbox.</p>
-    </div>
-  </div>
+        <div class="footer-support">
+          <h4>Customer Support</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 GiftAura. Crafted with 💖 for moments that matter.</p>
-  </div>
-</footer>
-  <!-- Icons CDN -->
-  <script src="https://kit.fontawesome.com/a2e0e6ad4c.js" crossorigin="anonymous"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/script.js"></script>
-</body>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Get the latest gift trends & offers straight to your inbox.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 GiftAura. Crafted with 💖 for moments that matter.</p>
+      </div>
+    </footer>
+    <!-- Icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/a2e0e6ad4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -8,6 +8,29 @@ menuToggle.addEventListener("click", () => {
   menuOpen = !menuOpen;
   navLinks.classList.toggle("active");
   menuToggle.textContent = menuOpen ? "✕" : "☰";
+  
+  document.addEventListener("DOMContentLoaded", () => {
+  gsap.fromTo(".vertical-brand",
+    { opacity: 0, x: -40 },
+    {
+      opacity: 1,
+      x: 0,
+      duration: 1.5,
+      ease: "power3.out",
+      delay: 0.6
+    }
+  );
+
+  // Subtle floating motion (loop)
+  gsap.to(".vertical-brand", {
+    y: "+=10",
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+});
+
 
   // 🩷 Mobile view — move icons inside the slide menu
   if (window.innerWidth <= 900) {

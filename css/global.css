@@ -80,21 +80,29 @@ h1, h2, h3, h4 {
   color: #ff6f91;
 }
 .vertical-brand {
-  display: none;
   position: absolute;
-  top: 46%;
+  top: 46.5%;
   left: 2rem;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
-  font-size: 1rem;
-  letter-spacing: 0.5rem;
-  color: #ff6f91;
-  font-weight: 600;
-  font-family: "Playfair Display", serif;
+  font-size: 1.7rem; /* 👈 bigger font size */
+  letter-spacing: 0.2rem; /* tighter spacing for single-line look */
+  color: #ff4fa3;
+  font-weight: 700;
+  font-family: "Poppins", serif;
   text-transform: uppercase;
-  opacity: 0.7;
-  transition: all 0.4s ease;
+  opacity: 0;
+  transition: all 0.6s ease;
+  z-index: 10;
 }
+
+/* Optional hover glow */
+.vertical-brand:hover {
+  color: #ff80b5;
+  text-shadow: 0 0 8px rgba(255, 111, 180, 0.7);
+  transform: translateY(-50%) rotate(-90deg) scale(1.05);
+}
+
 
 /* 🌸 Icons */
 .nav-icons {

@@ -1,0 +1,118 @@
+/* About Page - GiftAura Pink Theme */
+.about-hero {
+  background: linear-gradient(to right, #ffe6f0, #ffd6eb);
+  padding: 6rem 10%;
+  text-align: center;
+  color: #d63384;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  max-width: 750px;
+  margin: auto;
+  color: #444;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Mission Section */
+.mission-section {
+  background: #fff0f6;
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.mission-section h2 {
+  color: #d63384;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.mission-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+}
+
+.mission-card img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.mission-card h3 {
+  color: #d63384;
+  margin-bottom: 0.6rem;
+}
+
+/* Why Choose Section */
+.why-choose {
+  padding: 4rem 8%;
+  text-align: center;
+  background: #ffe6f0;
+}
+
+.why-choose h2 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-card img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.why-card h3 {
+  color: #d63384;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 4rem 6%;
+  }
+  .mission-grid, .why-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

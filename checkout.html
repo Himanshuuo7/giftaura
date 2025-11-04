@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiftAura | Checkout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="js/checkout.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">🎁 GiftAura</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="cart.html" class="icon">🛒</a>
+        <a href="login.html" class="icon">👤</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </header>
+
+    <!-- Checkout Section -->
+    <main class="checkout-container">
+      <section class="checkout-form">
+        <h2>Shipping Details</h2>
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" id="phone" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <textarea id="address" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Pincode</label>
+            <input type="text" id="pincode" required />
+          </div>
+
+          <h2>Payment Method</h2>
+          <div class="payment-options">
+            <label
+              ><input type="radio" name="payment" value="COD" checked /> Cash on
+              Delivery</label
+            >
+            <label><input type="radio" name="payment" value="UPI" /> UPI</label>
+            <label
+              ><input type="radio" name="payment" value="Card" /> Debit/Credit
+              Card</label
+            >
+          </div>
+        </form>
+      </section>
+
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="orderItems"></div>
+        <div class="summary-totals">
+          <p><strong>Total:</strong> ₹<span id="orderTotal">0</span></p>
+        </div>
+        <button class="btn-primary" id="placeOrderBtn">Place Order 🎉</button>
+      </section>
+    </main>
+
+    <!-- 🌸 Elegant Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>🎁 GiftAura</h3>
+      <p>
+        Spreading happiness with thoughtfully curated gifts that make every moment special.
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-facebook-circle-line"></i></a>
+        <a href="#"><i class="ri-twitter-line"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-support">
+      <h4>Customer Support</h4>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get the latest gift trends & offers straight to your inbox.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GiftAura. Crafted with 💖 for moments that matter.</p>
+  </div>
+</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

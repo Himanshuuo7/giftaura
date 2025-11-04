@@ -1,0 +1,108 @@
+/* 💌 Thank You Card */
+.thankyou-card {
+  background: #fff;
+  color: #333;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* 💖 Icon */
+.thankyou-card .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* 🎀 Order info - now in column layout */
+.order-info {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-info h3 {
+  font-size: 1.1rem;
+  color: #ff5fa2;
+  margin: 0;
+}
+
+.order-info p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff6fae, #ff95c8);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  border: 2px solid #ff85b3;
+  color: #ff5fa2;
+  background: #fff;
+}
+
+.btn-secondary:hover {
+  background: #ffe4ee;
+}
+
+/* ✨ Sparkles */
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #fff, #ffb6c1);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px #fff, 0 0 20px #ffb6c1, 0 0 30px #ffc0cb;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .thankyou-card {
+    padding: 25px;
+  }
+  .order-info h3 {
+    font-size: 1rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}

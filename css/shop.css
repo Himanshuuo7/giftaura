@@ -1,0 +1,102 @@
+.shop-hero {
+  background: linear-gradient(to right, #ffe1e8, #fff8f5);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.shop-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #e63946;
+}
+.shop-hero h1 span { color: #ff6f91; }
+.shop-hero p { font-family: 'Inter', sans-serif; color: #333; margin-top: .5rem; }
+
+.shop-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 5%;
+}
+
+/* Sidebar */
+.filters {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.filters h3 { margin-bottom: 1rem; color: #e63946; }
+.filter-group { margin-bottom: 1.5rem; }
+.filter-group h4 { margin-bottom: .5rem; font-weight: 600; color: #333; }
+.filter-group label { display: block; margin-bottom: .3rem; }
+.filter-group input[type="range"] { width: 100%; }
+.filter-group input[type="text"] {
+  width: 100%; padding: .5rem; border: 1px solid #ff6f91; border-radius: .5rem;
+}
+
+/* Products */
+.products {
+  flex: 3;
+}
+.sort-bar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.sort-bar select {
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: 0.3s ease;
+}
+.product-card:hover { transform: translateY(-5px); }
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: .75rem;
+}
+.product-card h3 { margin: .8rem 0 .3rem; color: #2c2c2c; font-family: 'Poppins'; }
+.product-card p { color: #e63946; font-weight: 600; margin-bottom: .5rem; }
+.product-card a{
+  background-color: transparent;
+  border: 1.5px solid #ff6f91;
+  color: #ff6f91;
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+.product-card a:hover{
+  color: #ffff;
+  background-color: #ff6f91;
+}
+
+.product-card button:hover { background: #e63946; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .shop-container { flex-direction: column; }
+  .filters { order: 2; }
+  .products { order: 1; }
+}
+
+@media (max-width: 600px) {
+  .shop-hero h1 { font-size: 1.6rem; }
+  .shop-container { padding: 1rem; }
+}

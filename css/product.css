@@ -1,0 +1,224 @@
+/* 🌸 GiftAura Product Detail Page - Premium Dark Pink Theme */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ffe1e8, #fff8f5);
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🧁 Product Container */
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🖼️ Product Image Section */
+.product-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 💬 Product Info */
+.product-info {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 20, 147, 0.15);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+}
+
+.product-info h2 {
+  color: #ff7ab8;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.product-info p {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.product-info h3 {
+  color: #ffce45;
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* 📅 Delivery Date */
+.delivery-date {
+  margin-top: 1.5rem;
+}
+
+.delivery-date label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #ffb3d1;
+}
+
+.delivery-date input {
+  background: #121212;
+  border: 1px solid #ff7ab8;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.delivery-date input:focus {
+  border-color: #ffce45;
+}
+
+/* 🎁 Action Buttons */
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary{
+  padding: 1rem 1.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* 💗 Pink Accent Outline */
+.btn-primary {
+  background: transparent;
+  border: 2px solid #ff7ab8;
+  color: #ff7ab8;
+}
+
+.btn-primary:hover {
+  background: #ff7ab8;
+  color: #fff;
+}
+
+/* 🌸 Related Products */
+.related-products {
+  padding: 3rem 2rem;
+  background: #121212;
+}
+
+.related-products h2 {
+  color: #ffce45;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.related-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 105, 180, 0.1);
+}
+
+.related-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.25);
+}
+
+.related-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+
+.related-card h4 {
+  color: #ffb3d1;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.related-card p {
+  color: #ffce45;
+  font-weight: 600;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+  .product-detail-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .product-image img {
+    max-width: 350px;
+  }
+
+  .product-info {
+    padding: 2rem 1.5rem;
+  }
+
+  .product-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .product-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-info p {
+    font-size: 0.95rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

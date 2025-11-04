@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Success | GiftAura</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/thankyou.css" />
+  </head>
+  <body>
+    <!-- 🌟 Navbar -->
+    <header class="navbar">
+      <div class="logo">🎁 GiftAura</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="cart.html" class="icon">🛒</a>
+        <a href="login.html" class="icon">👤</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </header>
+
+    <!-- 💖 Thank You Section -->
+    <section class="thankyou-section">
+      <div class="thankyou-card">
+        <div class="icon success-anim">💖</div>
+        <h2 id="userNameText">Thank You for Your Order!</h2>
+        <p>Your order has been successfully placed and is being processed.</p>
+
+        <div class="order-info">
+          <h3>Order ID: <span id="orderId"></span></h3>
+          <p>We’ve sent you a confirmation email with your order details.</p>
+        </div>
+
+        <div class="buttons">
+          <a href="shop.html" class="btn-secondary">🛍️ Continue Shopping</a>
+          <a href="index.html" class="btn-primary">🏠 Return Home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌸 Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>GiftAura</h4>
+          <p>
+            Making every celebration unforgettable with curated gifts &
+            thoughtful surprises.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <p>📸 Instagram | 👍 Facebook | 🕊 X</p>
+        </div>
+      </div>
+      <p class="copyright" style="text-align: center">
+        © 2025 GiftAura. All rights reserved.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/thankyou.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

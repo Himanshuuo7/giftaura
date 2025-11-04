@@ -1,0 +1,119 @@
+/* 💖 Hero */
+.contact-hero {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #ffe1e8, #fff8f5);
+  color: #000;
+}
+
+.contact-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+.contact-hero span {
+  color: #ff6f91;
+}
+
+.contact-hero p {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* 💌 Form + Map */
+.contact-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+.contact-form,
+.contact-map {
+  background: #ffff;
+  padding: 2rem;
+  border-radius: 16px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(255, 128, 171, 0.3);
+}
+.contact-map{
+    margin-top: 1rem;
+}
+
+.contact-form h2,
+.contact-map h2 {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #444;
+  font-size: 1rem;
+  border: 2px solid #ff7eb9;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff8ac9, #ff5ca7);
+  border: none;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #ff9ed1, #ff6bb4);
+}
+
+/* ✅ Success/Error Msg */
+.form-msg {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #ffb3d9;
+  text-align: center;
+}
+
+/* 🌸 Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form,
+  .contact-map {
+    max-width: 100%;
+  }
+}

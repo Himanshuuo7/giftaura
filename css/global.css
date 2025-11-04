@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff8f5;
   color: #2c2c2c;
 }
@@ -12,7 +12,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Poppins", sans-serif;
 }
 .btn-primary {
@@ -49,7 +52,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   padding: 0.6rem 3%;
   background-color: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -103,14 +106,13 @@ h1, h2, h3, h4 {
   transform: translateY(-50%) rotate(-90deg) scale(1.05);
 }
 
-
 /* 🌸 Icons */
 .nav-icons {
   display: flex;
   align-items: center;
 }
 
-.nav-icons img{
+.nav-icons img {
   height: 3.5rem;
   color: #ff6f91;
 }
@@ -138,13 +140,12 @@ h1, h2, h3, h4 {
   transform: rotate(90deg);
 }
 
-
 .footer {
   background: linear-gradient(135deg, #fff0f6 0%, #ffe4ec 100%);
   color: #2c2c2c;
   padding: 2rem 8%;
   margin-top: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-top: 2px solid #ffb6c1;
 }
 
@@ -209,7 +210,7 @@ h1, h2, h3, h4 {
   align-items: center;
   font-size: 1.2rem;
   color: #ff6f91;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 .social-links a:hover {
@@ -240,7 +241,7 @@ h1, h2, h3, h4 {
     justify-content: flex-start;
     align-items: center;
     padding-top: 5rem;
-    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
     transition: right 0.5s ease;
   }
   .nav-links.active .vertical-brand {
@@ -278,13 +279,12 @@ h1, h2, h3, h4 {
     z-index: 1100;
   }
 
-
   /* 🩷 Optional Glow */
   .nav-links.active {
-    box-shadow: -5px 0 25px rgba(255,111,145,0.3);
+    box-shadow: -5px 0 25px rgba(255, 111, 145, 0.3);
   }
 
-   .footer-top {
+  .footer-top {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -293,6 +293,19 @@ h1, h2, h3, h4 {
   }
   .hero h1 {
     font-size: 1.8rem;
+  }
+  .vertical-brand {
+    top: 46.5%;
+    left: 2.3rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.25rem;
+  }
+
+  /* Optional hover glow */
+  .vertical-brand:hover {
+    color: #ff80b5;
+    text-shadow: 0 0 8px rgba(255, 111, 180, 0.7);
+    transform: translateY(-50%) rotate(-90deg) scale(1.05);
   }
 }
 @keyframes fadeInLeft {

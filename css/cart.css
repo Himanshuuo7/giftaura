@@ -73,11 +73,12 @@ body {
   border-radius: 6px;
   padding: 6px 10px;
   cursor: pointer;
-  transition: all ease 0.8s;
 }
+
 .remove-btn:hover{
   background-color: #ff4fa3;
   color: #ffff;
+  transition: all ease 0.3s;
 }
 
 .cart-summary {
@@ -173,9 +174,9 @@ body {
   }
 
   .remove-btn {
-    display: inline-block;
-    padding: 8px 3rem;
-    margin-right: 4rem; 
+    align-self: flex-end;
+    margin-right: 6rem;
+    margin-top: 10px;
   }
 
   .cart-summary {
